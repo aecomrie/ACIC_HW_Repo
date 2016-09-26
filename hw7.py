@@ -2,7 +2,11 @@ from netCDF4 import Dataset #access netcdf data
 import os
 import plotly.plotly as py
 import plotly.graph_objs as go #use plotly
-py.sign_in("aecomrie","bh1lwqu0d2")
+
+username = raw_input("Please enter your plotly username: ")
+apikey = raw_input("Please enter your plotly API key: ")
+
+py.sign_in(username, apikey)
 
 with Dataset("/data/tmin.nc", "r") as tmin:
     tempMinJ = tmin.variables["tmin"][0]
