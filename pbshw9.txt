@@ -10,7 +10,7 @@
 #PBS -l walltime=00:01:00
 #PBS -l cput=00:01:00
 
-cd /home/u22/aecomrie/files
+cd /home/u22/aecomrie
 
 date
 /usr/bin/time echo "This is a test. Only a test. Do not panic"
