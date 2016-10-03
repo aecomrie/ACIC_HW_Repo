@@ -5,7 +5,7 @@
 #PBS -W group_list=ericlyons
 #PBS -q windfall
 #PBS -l jobtype=serial
-#PBS -l select=1:ncupus=1:mem=1gb
+#PBS -l select=1:ncpus=1:mem=1gb
 #PBS -l place=pack:shared
 #PBS -l walltime=00:01:00
 #PBS -l cput=00:01:00
